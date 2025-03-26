@@ -37,32 +37,32 @@ jobs:
           cd backend
           echo "No backend tests yet"
 
-  frontend-checks:
-    name: Check Frontend
-    runs-on: ubuntu-latest
+  # frontend-checks:
+  #   name: Check Frontend
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20
+  #     - name: Set up Node.js
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 20
 
-      - name: Install frontend dependencies (if any)
-        run: |
-          cd frontend
-          if [ -f package.json ]; then
-            npm install
-          fi
+  #     - name: Install frontend dependencies (if any)
+  #       run: |
+  #         cd frontend
+  #         if [ -f package.json ]; then
+  #           npm install
+  #         fi
 
-      - name: Run frontend linter (placeholder)
-        run: |
-          cd frontend
-          echo "Skipping linting for now"
+  #     - name: Run frontend linter (placeholder)
+  #       run: |
+  #         cd frontend
+  #         echo "Skipping linting for now"
 
-      - name: Run frontend tests (placeholder)
-        run: |
-          cd frontend
-          echo "No frontend tests yet"
+  #     - name: Run frontend tests (placeholder)
+  #       run: |
+  #         cd frontend
+  #         echo "No frontend tests yet"
